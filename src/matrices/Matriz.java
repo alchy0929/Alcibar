@@ -42,7 +42,7 @@ public class Matriz {
         Matriz matrizResultante = new Matriz(filasA, columnasA, false);
         for (j = 0; j < filasA; j++) { 
             for (i = 0; i < columnasA; i++) { 
-                matrizResultante.datos[i][j] += a.datos[i][j] * b.datos[i][j]; 
+                matrizResultante.datos[i][j] += a.datos[i][j] - b.datos[i][j]; 
             } 
         } 
         return matrizResultante; 
